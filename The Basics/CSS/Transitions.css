@@ -1,0 +1,53 @@
+.circle{
+    height: 300px;
+    width: 300px;
+    background-color: coral;
+    transition: 1s;
+    transition-timing-function: ease-out;
+    margin: auto;
+}
+
+.circle:hover{
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    transform: scale(0.5);
+}
+
+h2{
+    border: 5px solid black;
+    background-color: blue;
+    color: palegoldenrod;
+    padding: 0.7em;
+    width: 300px;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 20px auto;
+}
+
+section:nth-of-type(1) h2:nth-of-type(1){
+    transform: rotate(20deg);
+    transform-origin: top left;
+}
+
+section:nth-of-type(1) h2:nth-of-type(2){
+    transform:scale(0.5)
+}
+
+section:nth-of-type(1) h2:nth-of-type(3){
+    transform:translateX(50%)
+}
+
+section:nth-of-type(2) h2:nth-of-type(1){
+    transform:skew(45deg)
+}
+
+section:nth-of-type(2){
+    transform: scale(0.5);
+}
+
+h2:nth-of-type(2n){
+    background-color: orange;
+}
+h2:nth-of-type(3n){
+    background-color: darkorchid;
+}

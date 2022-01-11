@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Example of Form:</h1>
+    <form action="/actioncontainer">
+        <p>
+            <label for="username">Enter Username:</label>
+            <input type="text" placeholder="username" id="username" name="usr" required>
+        </p>
+        <p>
+            <label for="mail">Enter Email:</label>
+            <input type="email" placeholder="email" id="mail" name="mail" required>
+        </p>
+        <p>
+            <label for="password">Enter Password:</label>
+            <input type="password" placeholder="password" id="password" name="pswrd" required minlength="5" maxlength="28">
+
+        </p>
+        <p>
+            <label for="color">Pick a Color:</label>
+            <input type="color" id="color" name="clr">
+        </p>
+        <p>
+            <label for="number">Enter a Number:</label>
+            <input type="number" value="0" id="number" name="num" min="0" max="100">
+        </p>
+        <button>Submit</button>
+    </form>
+    <hr>
+    <h1>Different Search Engines</h1>
+    <form action="https://www.reddit.com/search">
+        <span>Reddit:</span>
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+    <form action="https://www.google.com/search">
+        <span>Google:</span>
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+        <span>Youtube:</span>
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
+    <hr>
+    <h1>More Input Types</h1>
+    <form action="/placeholder">
+        <h2>Do You Agree?</h2>
+        <label for="agree"> I Agree</label>
+        <input type="checkbox" name="agreed" id="agree" checked>
+        <p>
+            <h2>Do You Like Cheese</h2>
+            <label for="yes">Yes</label>
+            <input type="radio" name="cheese" id="yes" value="yes">
+            <label for="no">No</label>
+            <input type="radio" name="cheese" id="no" value="no">
+        </p>
+        <p>
+            <h2>Selection</h2>
+            <label for="genre">Select a Game Genre</label>
+            <select name="genre" id="genre">
+                <option value="">--Genre--</option>
+                <option value="fps">First-Person Shooter</option>
+                <option value="rpg">RPG</option>
+                <option value="strategy">Strategy</option>
+                <option value="horror">Horror</option>
+                <option value="adv">Adventure</option>
+            </select>
+        </p>
+        <p>
+            <h2>Range</h2>
+            <label for="rate">Minimum Rating:</label>
+            <input type="range" name="rate" id="rate" min="1" max="10" step="0.5" value="5">
+        </p>
+        <p>
+            <h2>Text Area</h2>
+            <label for="feed">Feedback:</label>
+            <br>
+            <textarea name="feed" id="feed" cols="20" rows="10"></textarea>
+        </p>
+    </form>
+    <hr>
+    <a href="Starting Out.html"><button>Return to Main</button></a>
+</body>
+
+</html>
